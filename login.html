@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css"> 
+    <title>LogIn </title>
+</head>
+<body>
+ <header style="height: 80px">
+
+ </header>
+
+ <section class="container" >
+     <div class="row">
+        <div class="col-md-3"></div>
+         <div class="col-md-6">
+            <div class="loginform" style="border-radius:16px;background-color: ghostwhite;border: 2px solid lightgrey;">   
+                <form id="loginform" name="loginform" method="POST">
+                    <div class="input" style="text-align: center;">
+                        <h3>Log Into Academia </h3>
+                        <p>or <a href="#">Create Account</a></p>
+                    </div>
+                    <div class="form" style="text-align: center;">
+                        <div class="input">
+                            <!-- <p>Email - address</p> -->
+                                <input type="text" placeholder="XYZ@srmuniv.edu.in" name="username" id="Email" required="" autofocus="" onkeypress="onEmailEnter(event)" onfocusout="validateEmail()">
+                                <!-- <span id="emailErr" class="errormsg" style="display: block;">Enter Valid SRM Email Address</span> -->
+                                <hr style="width: 50%;">
+
+                        </div>
+                        <div class="input">
+                            <!-- <p>Password</p> -->
+                                <input type="password" placeholder="Password" name="password" id="Password" required="" onkeypress="onPasswordEnter(event)">               
+                                <!-- <span id="passwordErr" class="errormsg" style="display:none">Enter Valid Password.</span> -->
+                                <hr style="width: 50%;">
+                        </div>
+                        
+                        <div class="input" >
+                                <input class="btn" style="background-color: darkgrey;" type="submit" onclick="loginform();" value="Log-In">
+                        </div>
+                    </div>
+                </form>
+
+             </div>
+         </div>
+        <div class="col-md-3"></div>
+    </div>
+ </section>   
+</body>
+</html>
